@@ -20,7 +20,6 @@ export default function ConnectionLines({ scroll, reduceMotion }) {
       const p1 = vectors[from];
       const p2 = vectors[to];
       const mid = new THREE.Vector3().addVectors(p1, p2).multiplyScalar(0.5);
-      // Lift midpoint slightly to create a high-tech curved cyber link line
       mid.z += 0.2; 
       const curve = new THREE.QuadraticBezierCurve3(p1, mid, p2);
       const points = curve.getPoints(24);
@@ -29,7 +28,6 @@ export default function ConnectionLines({ scroll, reduceMotion }) {
     return { lineGeometries: geoms, nodeVectors: vectors };
   }, []);
 
-  // Multi-packet traveling data streams configuration
   const packets = useMemo(() => {
     return Array.from({ length: 6 }).map((_, i) => ({
       linkIndex: i % links.length,
