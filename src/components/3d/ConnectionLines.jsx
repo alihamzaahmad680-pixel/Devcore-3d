@@ -105,7 +105,6 @@ export default function ConnectionLines({ scroll, reduceMotion }) {
         </group>
       ))}
 
-      {/* Multi-Stream Traveling Energy Packets */}
       <group ref={pulsesGroup}>
         {packets.map((pkt, i) => (
           <mesh key={i}>
