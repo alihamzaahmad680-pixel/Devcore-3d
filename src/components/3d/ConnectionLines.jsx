@@ -41,7 +41,6 @@ export default function ConnectionLines({ scroll, reduceMotion }) {
   useFrame((state) => {
     const t = reduceMotion ? 0 : state.clock.elapsedTime;
 
-    // Group-level floating & pointer-parallax effect
     if (groupRef.current) {
       groupRef.current.rotation.y = THREE.MathUtils.lerp(groupRef.current.rotation.y, (scroll.current?.pointerX || 0) * 0.15, 0.05);
       groupRef.current.rotation.x = THREE.MathUtils.lerp(groupRef.current.rotation.x, (scroll.current?.pointerY || 0) * 0.1, 0.05);
