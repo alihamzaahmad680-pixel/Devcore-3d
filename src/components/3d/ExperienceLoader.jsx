@@ -29,7 +29,6 @@ export default function ExperienceLoader({ loaded = false }) {
       }`}
       aria-hidden="true"
     >
-      {/* Glowing Ambient Backdrop Aura */}
       <div className="absolute w-[350px] h-[350px] bg-gradient-to-tr from-[#00f0ff]/20 to-[#7000ff]/20 rounded-full blur-[100px] animate-pulse" />
 
       {/* Cyber Orbit Ring */}
