@@ -79,7 +79,6 @@ export default function ConnectionLines({ scroll, reduceMotion }) {
         </line>
       ))}
 
-      {/* Network Node Orbs with Outer Halo Ring */}
       {nodes.map((position, index) => (
         <group key={index} position={position}>
           {/* Inner Glowing Core */}
