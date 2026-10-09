@@ -87,7 +87,6 @@ export default function ConnectionLines({ scroll, reduceMotion }) {
             <meshBasicMaterial color={index % 2 === 0 ? '#00f0ff' : '#b7a8fa'} />
           </mesh>
 
-          {/* Outer Cyber Pulse Ring */}
           <mesh rotation={[Math.PI / 2, 0, 0]}>
             <ringGeometry args={[0.06, 0.075, 16]} />
             <meshBasicMaterial
