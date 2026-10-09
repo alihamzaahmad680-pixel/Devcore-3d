@@ -67,7 +67,6 @@ export default function ConnectionLines({ scroll, reduceMotion }) {
 
   return (
     <group ref={groupRef} position={[1.15, 0, -0.3]}>
-      {/* Dynamic Cyber Lines */}
       {lineGeometries.map((geometry, index) => (
         <line key={index} geometry={geometry}>
           <lineBasicMaterial
