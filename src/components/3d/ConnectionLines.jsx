@@ -47,7 +47,6 @@ export default function ConnectionLines({ scroll, reduceMotion }) {
       groupRef.current.position.y = Math.sin(t * 0.8) * 0.08;
     }
 
-    // Dynamic Multi-Packet Travel Animation
     if (pulsesGroup.current) {
       pulsesGroup.current.children.forEach((mesh, idx) => {
         const pkt = packets[idx];
