@@ -14,7 +14,6 @@ export default function ConnectionLines({ scroll, reduceMotion }) {
   const pulsesGroup = useRef();
   const linesMaterialRef = useRef([]);
 
-  // Create curved geometries and line positions
   const { lineGeometries, nodeVectors } = useMemo(() => {
     const vectors = nodes.map((n) => new THREE.Vector3(...n));
     const geoms = links.map(([from, to]) => {
